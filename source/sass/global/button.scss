@@ -1,0 +1,59 @@
+.button {
+  border: 0;
+  text-decoration: none;
+  color: $base-white;
+  text-align: center;
+  font-size: 16px;
+  font-family: $font-famaly;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: $base-primary;
+  padding: 8px 20px;
+  cursor: pointer;
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--text-little {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--decorative {
+    color: $base-primary;
+    background-color: $base-white;
+
+    &:hover,
+    :focus {
+      color: $base-white;
+    }
+
+    &:disabled {
+      background-color: $light-grey;
+      color: $base-white;
+    }
+  }
+
+  &--basket {
+    padding-left: 46px;
+    background-image: url("/img/main-page/button-basket.svg");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+  }
+
+  &:hover,
+  :focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}

@@ -1,0 +1,79 @@
+.social-network {
+  display: flex;
+  column-gap: 38px;
+  align-items: center;
+}
+
+.social-network__logo {
+  text-decoration: none;
+}
+
+.social-network__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.social-network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: $base-grey;
+  border-radius: 4px;
+
+  &:hover,
+  :focus {
+    background-color: $base-secondary;
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $primary-opacity;
+  }
+}
+
+.social-network__icon {
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-network__logo {
+    display: block;
+    width: 170px;
+    height: 36px;
+  }
+
+  .social-network {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-network {
+    position: relative;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    row-gap: 80px;
+
+    .social-network__container {
+      max-width: 450px;
+    }
+
+    &::before {
+      content: "Интернет-магазин кофейных напитков";
+      position: absolute;
+      display: block;
+      top: 46px;
+      left: 0;
+      width: 318px;
+    }
+  }
+
+  .social-network__logo {
+    position: relative;
+  }
+}

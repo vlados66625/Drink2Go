@@ -1,0 +1,175 @@
+.advantages {
+  background-color: $base-white;
+}
+
+.advantages__title {
+  margin: 0 0 4px 0;
+}
+
+.advantages__header {
+  margin: 0;
+  padding-bottom: 4px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 66px;
+  margin-top: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  &--speed::before {
+    background: url("/img/main-page/speed.svg") no-repeat center;
+  }
+
+  &--convenience::before {
+    background: url("/img/main-page/convenience.svg") no-repeat center;
+  }
+
+  &--cheerfulness::before {
+    background: url("/img/main-page/cheerfulness.svg") no-repeat center;
+  }
+
+  &--ecology::before {
+    background: url("/img/main-page/ecology.svg") no-repeat center;
+  }
+}
+
+.advantages__heading {
+  margin: 0 0 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.advantages__description {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__header {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
+  .advantages__item {
+    max-width: 339px;
+    padding: 0;
+    margin: 0;
+    padding-left: 72px;
+    justify-items: start;
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+
+    &--speed::before {
+      top: 4px;
+      left: -2px;
+    }
+
+    &--cheerfulness::before {
+      left: -2px;
+    }
+
+    &--convenience::before {
+      left: -2px;
+    }
+
+    &--ecology::before {
+      top: 4px;
+      left: -1px;
+    }
+  }
+
+  .advantages__description {
+    text-align: start;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__description-br {
+    &--1 {
+      display: none;
+    }
+  }
+
+  .advantages__heading {
+    text-align: start;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: flex;
+  }
+
+  .advantages__item {
+    width: 318px;
+    padding: 0;
+    padding-top: 76px;
+    justify-items: start;
+
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .advantages__description {
+    text-align: center;
+  }
+
+  .advantages__description-br {
+    &--1 {
+      display: inline;
+    }
+  }
+
+  .advantages__heading {
+    text-align: center;
+  }
+
+  .advantages__header {
+    margin-bottom: 80px;
+  }
+}

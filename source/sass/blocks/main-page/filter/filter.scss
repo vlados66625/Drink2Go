@@ -1,0 +1,75 @@
+.filter__price {
+  margin-bottom: 30px;
+}
+
+.filter__availability-milk {
+  margin-bottom: 34px;
+}
+
+.filter__country-cultivation {
+  margin-bottom: 30px;
+}
+
+.filter__button-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+  .filter__price,
+  .filter__availability-milk,
+  .filter__country-cultivation {
+    margin-bottom: 0;
+  }
+
+  .filter__button-container {
+    flex-direction: row;
+    grid-column: 1/4;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .filter__sorting {
+    padding-top: 4px;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    margin-left: auto;
+  }
+
+  .filter__button-apply {
+    width: 137px;
+  }
+
+  .filter__button-reset {
+    width: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .filter__button-container {
+    margin-top: 10px;
+  }
+
+  .filter__button-apply {
+    width: 149px;
+  }
+
+  .filter__button-reset {
+    width: 149px;
+  }
+}

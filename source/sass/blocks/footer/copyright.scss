@@ -1,0 +1,25 @@
+.copyright__description {
+  text-align: center;
+  margin: 0;
+  color: $base-grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $base-grey;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:hover,
+  :focus,
+  :active {
+    color: $base-primary;
+  }
+}
+
+.copyright__icon {
+  text-decoration: none;
+  vertical-align: middle;
+}

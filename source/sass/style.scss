@@ -2,6 +2,43 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/mixin.scss";
+@import "global/container-little.scss";
+@import "global/container-full.scss";
+@import "global/button.scss";
 
-/* BLOCKS */
+/* BLOCKS HEADER */
 @import "blocks/header/header.scss";
+@import "blocks/header/navigation-user.scss";
+@import "blocks/header/navigation-page.scss";
+
+/* BLOCKS MAIN-PAGE */
+@import "blocks/main-page/main-page-title.scss";
+@import "blocks/main-page/main-page.scss";
+@import "blocks/main-page/slider.scss";
+@import "blocks/main-page/advantages.scss";
+@import "blocks/main-page/catalog.scss";
+@import "blocks/main-page/sorting.scss";
+@import "blocks/main-page/card.scss";
+@import "blocks/main-page/product-list.scss";
+@import "blocks/main-page/pagination.scss";
+
+/* BLOCKS MAIN-PAGE/FILTER */
+@import "blocks/main-page/filter/filter.scss";
+@import "blocks/main-page/filter/price.scss";
+@import "blocks/main-page/filter/filter-title.scss";
+@import "blocks/main-page/filter/availability-milk.scss";
+@import "blocks/main-page/filter/label.scss";
+@import "blocks/main-page/filter/selector.scss";
+@import "blocks/main-page/filter/country-cultivation.scss";
+@import "blocks/main-page/filter/range-scale.scss";
+
+/* BLOCKS FOOTER */
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/social-network.scss";
+@import "blocks/footer/footer-title.scss";
+@import "blocks/footer/internet-shop.scss";
+@import "blocks/footer/footer-link.scss";
+@import "blocks/footer/media.scss";
+@import "blocks/footer/contacts.scss";
+@import "blocks/footer/copyright.scss";

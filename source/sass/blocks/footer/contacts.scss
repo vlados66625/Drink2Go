@@ -1,0 +1,57 @@
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @include reset-list;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 19px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 16px;
+  }
+
+  &--addres {
+    &::before {
+      background: url("/img/footer/addres-icon.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      background: url("/img/footer/phone-icon.svg");
+    }
+  }
+}
+
+.contacts__addres {
+  font-style: normal;
+  line-height: 20px;
+}
+
+.contacts__phone {
+  color: $base-black;
+  text-decoration: none;
+
+  &:hover,
+  :focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}

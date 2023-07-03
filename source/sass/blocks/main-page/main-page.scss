@@ -1,0 +1,27 @@
+.main-page__container {
+  @include container-global;
+}
+
+.main-page__advantages {
+  padding: 50px 20px 60px;
+}
+
+.main-page__catalog {
+  background-color: $lightest-grey;
+}
+
+.main-page__catalog-wrapper {
+  padding: 50px 20px 44px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__advantages {
+    padding: 60px 30px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__advantages {
+    padding: 100px 40px 120px;
+  }
+}

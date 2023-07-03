@@ -1,0 +1,28 @@
+.sorting {
+  display: flex;
+  column-gap: 17px;
+}
+
+.sorting__title {
+  margin: 0;
+}
+
+.sorting__select {
+  color: $base-primary;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  border: none;
+  background-color: $lightest-grey;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.24px;
+}
+
+@media (min-width: $tablet-width) {
+  .sorting {
+    justify-content: end;
+    align-items: center;
+    column-gap: 8px;
+  }
+}

@@ -1,0 +1,35 @@
+.range-scale {
+  position: relative;
+  height: 2px;
+  background: $light-grey;
+}
+
+.range-scale__bar {
+  position: absolute;
+  height: 4px;
+  background: $primary-lighter;
+}
+
+.range-scale__toggle {
+  box-sizing: border-box;
+  position: absolute;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid $primary-lighter;
+  background: $base-white;
+  cursor: pointer;
+
+  &--min {
+    top: 2px;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &--max {
+    top: 2px;
+    left: 206px;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,153 @@
+.slider {
+  background-color: $flat-white;
+}
+
+.slider__wrapper {
+  padding: 20px 20px 60px 20px;
+}
+
+.slider__link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.slider__image {
+  display: block;
+}
+
+.slider__title {
+  margin: 0 0 4px 0;
+}
+
+.slider__header {
+  color: $base-black;
+  margin: 0 0 4px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+}
+
+.slider__description {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.slider__description-break {
+  display: none;
+}
+
+.slider__price-container {
+  margin-top: 20px;
+}
+
+.slider__old-price {
+  margin-left: 25px;
+  margin-right: 4px;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+
+.slider__new-price {
+  margin-right: 17px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    padding: 50px 80px 308px 80px;
+  }
+
+  .slider__price-container {
+    margin-left: -25px;
+  }
+
+  .slider__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__wrapper-2 {
+    width: 100%;
+    min-height: 188px;
+    background-color: $base-white;
+    z-index: 1;
+  }
+
+  .slider__image {
+    width: 476px;
+    height: 476px;
+    position: absolute;
+    bottom: -496px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slider__title {
+    margin-bottom: 4px;
+  }
+
+  .slider__header {
+    margin-bottom: 6px;
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__description {
+    margin: 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .slider__description-break {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__wrapper {
+    padding: 170px 96px 242px 80px;
+  }
+
+  .slider__container {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 655px;
+    align-items: start;
+    margin-left: auto;
+  }
+
+  .slider__description {
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+  .slider__price-container {
+    padding-left: 26px;
+  }
+
+  .slider__wrapper-2 {
+    display: none;
+  }
+
+  .slider__old-price {
+    margin-left: 0;
+  }
+
+  .slider__image {
+    width: 600px;
+    height: 600px;
+    top: -140px;
+    left: -284px;
+  }
+}
